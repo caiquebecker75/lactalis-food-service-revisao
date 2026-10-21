@@ -1,6 +1,6 @@
-# Lactalis Food Service × 75LAB · versão de revisão
+# Lactalis Food Service × 75LAB · proposta
 
-Versão de revisão interna da proposta de apoio comercial para o Food Service da Lactalis, a partir da reunião de 16/09/2026. Os valores das opções A e C estão marcados "a validar", e a tela de pendências fica no apêndice. Esta versão não é a proposta final ao cliente.
+Proposta de apoio comercial da 75LAB para o Food Service da Lactalis (21/10/2026), a partir da reunião de 16/09/2026 e do catálogo atual. Inclui os valores das opções A, B e C e as condições comerciais.
 
 - **Link:** https://projetos.75lab.com.br/lactalis-food-service-revisao/
 - **Fonte:** gerada pelo `build.ps1` do projeto `lactalis-food-service-75lab` (branch `revisao-briefing-1609`).
