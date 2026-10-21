@@ -1234,6 +1234,9 @@ body[data-theme="dark"] .rev-flag{color:#F2C27A;background:rgba(40,28,8,.6)}
 /* 04 · exemplos de layout */
 .r-mocks{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.9fr) minmax(0,1.25fr);gap:calc(var(--u)*2);align-items:end}
 .r-mk{display:flex;flex-direction:column;gap:calc(var(--u)*.8)}
+/* legenda com a largura da peça: a coluna da grade segue a maquete, e a legenda não a alarga */
+.r-mk.fit{display:grid;justify-content:center;align-content:end}
+.r-mk.fit figcaption{width:0;min-width:100%}
 .r-mk figcaption{font-size:var(--r-s);line-height:1.4;color:var(--mut)}
 .r-mk figcaption b{display:block;color:var(--fg);font-size:var(--r-t)}
 .mk-a5{display:flex;gap:calc(var(--u)*.8);justify-content:center}
@@ -1556,14 +1559,14 @@ body[data-theme="dark"] .rev-flag{color:#F2C27A;background:rgba(40,28,8,.6)}
     <h2 class="tk" style="max-width:34ch">Três exemplos de layout <em>para discutir antes da criação.</em></h2>
     <div class="body" style="gap:calc(var(--u)*1.6)">
       <div class="r-mocks">
-        <figure class="r-mk" style="margin:0" data-a="up" data-i="1">
+        <figure class="r-mk fit" style="margin:0" data-a="up" data-i="1">
           <div class="mk-a5" aria-hidden="true">
             <div class="pg a5"><div class="bar">Frente · visita</div><span class="ttl">Café da manhã no hotel</span><div class="ph img"><img src="assets/images/lactalis-iogurte-cafe-da-manha.jpg" alt=""></div><div class="ph img"><img src="assets/images/lactalis-manteiga-blister-torrada.jpg" alt=""></div><span class="k">3 razões para oferecer</span><i class="ln"></i><i class="ln s"></i><i class="ln xs"></i><span class="k">Formatos</span><i class="ln s"></i></div>
             <div class="pg a5"><div class="bar">Verso · entrega</div><span class="nf">Acompanha a nota fiscal</span><span class="k">Como pedir</span><i class="ln"></i><i class="ln s"></i><span class="k">Conservação</span><i class="ln xs"></i><div class="stamp">Contato ou carimbo<br>do vendedor</div></div>
           </div>
           <figcaption><b>Lâmina A5 · frente e verso</b>Uma peça, dois usos: apresentar na visita e deixar com o cliente na entrega.</figcaption>
         </figure>
-        <figure class="r-mk" style="margin:0" data-a="up" data-i="2">
+        <figure class="r-mk fit" style="margin:0" data-a="up" data-i="2">
           <div class="pg cat" aria-hidden="true"><div class="bar">Catálogo · Iogurtes</div><span class="ttl">Iogurtes Batavo</span><div class="row"><div class="ph img"><img src="assets/images/lactalis-iogurte-batavo-grego.jpg" alt=""></div><div><i class="ln"></i><i class="ln s" style="margin-top:4px"></i></div></div><div class="row"><div class="ph img"><img src="assets/images/lactalis-iogurte-batavo-original.jpg" alt=""></div><div><i class="ln"></i><i class="ln s" style="margin-top:4px"></i></div></div><span class="k">Ficha resumida</span><div class="tbl"><i class="h"></i><i class="h"></i><i class="h"></i><i class="h"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="k">Ocasiões de uso</span><i class="ln s"></i></div>
           <figcaption><b>Página de catálogo</b>Produto, formato, conservação e aplicação, com dados técnicos da Lactalis.</figcaption>
         </figure>
