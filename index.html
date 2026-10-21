@@ -1188,8 +1188,10 @@ body[data-theme="dark"] .rev-flag{color:#F2C27A;background:rgba(40,28,8,.6)}
 /* 02 · primeiro caso */
 .r-case{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.8fr) minmax(0,1.25fr);gap:calc(var(--u)*1.8);align-items:stretch}
 .r-prod{display:grid;gap:calc(var(--u)*1)}
-.r-pc{display:grid;grid-template-columns:calc(var(--u)*8) minmax(0,1fr);gap:calc(var(--u)*1.2);align-items:center;background:#fff;border:1px solid var(--line);border-radius:calc(var(--u)*1);padding:calc(var(--u)*1)}
+.r-pc{display:grid;grid-template-columns:calc(var(--u)*10.5) minmax(0,1fr);gap:calc(var(--u)*1.2);align-items:center;background:#fff;border:1px solid var(--line);border-radius:calc(var(--u)*1);padding:calc(var(--u)*1)}
 .r-ph{aspect-ratio:1/1;border-radius:calc(var(--u)*.7);display:grid;place-items:center;text-align:center;padding:6px;background:repeating-linear-gradient(135deg,rgba(0,75,133,.05) 0 8px,rgba(0,75,133,.09) 8px 16px);font-family:var(--f-mono);font-size:max(9.5px,calc(var(--u)*.62));letter-spacing:.06em;text-transform:uppercase;color:#4E6A86;line-height:1.3}
+.r-ph.img,.pg .ph.img{padding:0;overflow:hidden;background:#EEF3F8}
+.r-ph.img img,.pg .ph.img img{display:block;width:100%;height:100%;object-fit:cover}
 .r-pc b{display:block;font-size:calc(var(--r-t)*1.15);line-height:1.2}
 .r-pc span{display:block;margin-top:6px}
 .r-chan{display:flex;flex-direction:column;justify-content:center;gap:calc(var(--u)*.8);border-radius:calc(var(--u)*1.2);padding:calc(var(--u)*1.8);background:var(--navy);color:#fff}
@@ -1494,8 +1496,8 @@ body[data-theme="dark"] .rev-flag{color:#F2C27A;background:rgba(40,28,8,.6)}
       <div class="r-case">
         <div class="r-prod" data-a="up" style="--i:1">
           <span class="r-x">Produtos</span>
-          <div class="r-pc"><div class="r-ph">Foto oficial<br>Lactalis</div><div><b>Iogurtes Batavo</b><span class="r-sku">63 SKUs no catálogo · mix prioritário de até 10 a definir</span></div></div>
-          <div class="r-pc"><div class="r-ph">Foto oficial<br>Lactalis</div><div><b>Manteiga blister</b><span class="r-sku">5 SKUs no catálogo</span></div></div>
+          <div class="r-pc"><div class="r-ph img"><img src="assets/images/lactalis-iogurte-batavo-grego.jpg" alt="Iogurtes Batavo Grego em porção de 100 g, catálogo Food Service 2025" loading="lazy"></div><div><b>Iogurtes Batavo</b><span class="r-sku">63 SKUs no catálogo · mix prioritário de até 10 a definir</span></div></div>
+          <div class="r-pc"><div class="r-ph img"><img src="assets/images/lactalis-manteiga-blister-cafe.jpg" alt="Manteiga blister Président Gastronomique 10 g no café da manhã, catálogo Food Service 2025" loading="lazy"></div><div><b>Manteiga blister</b><span class="r-sku">5 SKUs no catálogo</span></div></div>
         </div>
         <div class="r-chan" data-a="up" style="--i:2">
           <span class="r-x">Canal</span>
@@ -1556,13 +1558,13 @@ body[data-theme="dark"] .rev-flag{color:#F2C27A;background:rgba(40,28,8,.6)}
       <div class="r-mocks">
         <figure class="r-mk" style="margin:0" data-a="up" data-i="1">
           <div class="mk-a5" aria-hidden="true">
-            <div class="pg a5"><div class="bar">Frente · visita</div><span class="ttl">Café da manhã no hotel</span><div class="ph">Foto oficial · iogurte Batavo</div><div class="ph">Foto oficial · manteiga blister</div><span class="k">3 razões para oferecer</span><i class="ln"></i><i class="ln s"></i><i class="ln xs"></i><span class="k">Formatos</span><i class="ln s"></i></div>
+            <div class="pg a5"><div class="bar">Frente · visita</div><span class="ttl">Café da manhã no hotel</span><div class="ph img"><img src="assets/images/lactalis-iogurte-cafe-da-manha.jpg" alt=""></div><div class="ph img"><img src="assets/images/lactalis-manteiga-blister-torrada.jpg" alt=""></div><span class="k">3 razões para oferecer</span><i class="ln"></i><i class="ln s"></i><i class="ln xs"></i><span class="k">Formatos</span><i class="ln s"></i></div>
             <div class="pg a5"><div class="bar">Verso · entrega</div><span class="nf">Acompanha a nota fiscal</span><span class="k">Como pedir</span><i class="ln"></i><i class="ln s"></i><span class="k">Conservação</span><i class="ln xs"></i><div class="stamp">Contato ou carimbo<br>do vendedor</div></div>
           </div>
           <figcaption><b>Lâmina A5 · frente e verso</b>Uma peça, dois usos: apresentar na visita e deixar com o cliente na entrega.</figcaption>
         </figure>
         <figure class="r-mk" style="margin:0" data-a="up" data-i="2">
-          <div class="pg cat" aria-hidden="true"><div class="bar">Catálogo · Iogurtes</div><span class="ttl">Iogurtes Batavo</span><div class="row"><div class="ph">Foto</div><div><i class="ln"></i><i class="ln s" style="margin-top:4px"></i></div></div><div class="row"><div class="ph">Foto</div><div><i class="ln"></i><i class="ln s" style="margin-top:4px"></i></div></div><span class="k">Ficha resumida</span><div class="tbl"><i class="h"></i><i class="h"></i><i class="h"></i><i class="h"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="k">Ocasiões de uso</span><i class="ln s"></i></div>
+          <div class="pg cat" aria-hidden="true"><div class="bar">Catálogo · Iogurtes</div><span class="ttl">Iogurtes Batavo</span><div class="row"><div class="ph img"><img src="assets/images/lactalis-iogurte-batavo-grego.jpg" alt=""></div><div><i class="ln"></i><i class="ln s" style="margin-top:4px"></i></div></div><div class="row"><div class="ph img"><img src="assets/images/lactalis-iogurte-batavo-original.jpg" alt=""></div><div><i class="ln"></i><i class="ln s" style="margin-top:4px"></i></div></div><span class="k">Ficha resumida</span><div class="tbl"><i class="h"></i><i class="h"></i><i class="h"></i><i class="h"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="k">Ocasiões de uso</span><i class="ln s"></i></div>
           <figcaption><b>Página de catálogo</b>Produto, formato, conservação e aplicação, com dados técnicos da Lactalis.</figcaption>
         </figure>
         <figure class="r-mk" style="margin:0" data-a="up" data-i="3">
@@ -1570,7 +1572,7 @@ body[data-theme="dark"] .rev-flag{color:#F2C27A;background:rgba(40,28,8,.6)}
           <figcaption><b>Apresentação para redes de hotéis e hospitais</b>Usada pela Lactalis e pelo distribuidor em visitas conjuntas.</figcaption>
         </figure>
       </div>
-      <p class="r-note" data-a="fade" data-d=".6s"><span class="rv">Exemplos para discussão</span>Composições ilustrativas. Fotos, produtos e informações técnicas oficiais entram na criação, com aprovação da Lactalis.</p>
+      <p class="r-note" data-a="fade" data-d=".6s"><span class="rv">Exemplos para discussão</span>Composições ilustrativas, com imagens do catálogo Food Service 2025. Fotos em alta e informações técnicas oficiais entram na criação, com aprovação da Lactalis.</p>
     </div>
   </div>
   <aside class="notes"><p>Mostrar que o pacote é concreto: estas são as peças que a Lactalis recebe.</p><ul><li>Não há SKU, rendimento ou alegação técnica inventada: os campos ficam em branco até a Lactalis enviar as informações.</li></ul></aside>
